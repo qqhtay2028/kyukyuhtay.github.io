@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kyu's Data Analyst Portfolio</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,22 +13,26 @@
             background: #f5f7fa;
             color: #333;
         }
+
         header {
             background: #1a73e8;
             color: white;
             padding: 40px 20px;
             text-align: center;
         }
+
         .container {
-            max-width: 1000px;
-            margin: 0 auto;
+            max-width: 1050px;
+            margin: auto;
             padding: 20px;
         }
+
         h2 {
             border-left: 4px solid #1a73e8;
-            padding-left: 10px;
+            padding-left: 12px;
             margin-top: 40px;
         }
+
         .section {
             background: white;
             padding: 20px;
@@ -35,128 +40,132 @@
             border-radius: 10px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
-        ul {
-            line-height: 1.8;
-        }
+
         .project {
-            margin-bottom: 40px;
+            margin-bottom: 35px;
         }
-        .project img {
-            width: 300px;
-            height: 300px;
+
+        /* FIXED IMAGE GRID */
+        .img-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .img-row img {
+            width: 310px;
+            height: 210px;
             object-fit: cover;
-            border-radius: 10px;
-            margin: 10px;
+            border-radius: 8px;
+            background: #ddd; /* placeholder if image missing */
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
         }
+
         footer {
+            background: #e3e3e3;
+            padding: 18px;
             margin-top: 50px;
             text-align: center;
-            padding: 20px;
-            background: #eee;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Kyu – Senior Data Analyst</h1>
-        <p>Power BI • SQL • Odoo ERP • SAP Reporting • Automation • Data Integration</p>
-    </header>
+<header>
+    <h1>Kyu – Senior Data Analyst</h1>
+    <p>Power BI • SQL • Odoo ERP • SAP • Automation • Dashboards</p>
+</header>
 
-    <div class="container">
+<div class="container">
 
-        <!-- About Me -->
-        <h2>About Me</h2>
-        <div class="section">
+    <!-- About Me -->
+    <h2>About Me</h2>
+    <div class="section">
+        <p>
+            Senior Data Analyst with over 6 years of experience in retail, banking, and ERP systems.
+            Specialized in Power BI dashboards, SQL data modeling, Odoo ERP reporting automation,
+            SAP data integration, and business performance analysis.
+        </p>
+    </div>
+
+    <!-- Skills -->
+    <h2>Technical Skills</h2>
+    <div class="section">
+        <ul>
+            <li><b>Visualization:</b> Power BI, Tableau, Oracle BI Publisher, Report Builder</li>
+            <li><b>Databases:</b> SQL, Oracle, PostgreSQL, MSSQL, MySQL</li>
+            <li><b>ERP:</b> Odoo, SAP, Pointsoft System</li>
+            <li><b>ETL:</b> Pentaho Kettle</li>
+            <li><b>Languages:</b> SQL, PL/SQL, Python, JavaScript, PHP, HTML</li>
+            <li><b>Cloud:</b> SharePoint, OneDrive, Power Automate</li>
+        </ul>
+    </div>
+
+    <!-- Projects -->
+    <h2>Projects</h2>
+    <div class="section">
+
+        <!-- Project 1 -->
+        <div class="project">
+            <h3>1. Retail Sales Performance Dashboard (Power BI)</h3>
             <p>
-                I am a Senior Data Analyst with 6+ years of experience in retail, banking, and ERP systems.
-                Specializing in Power BI dashboards, SQL querying, Odoo ERP integration, SAP reporting, and
-                automation of daily business insights. I enjoy transforming complex datasets into actionable insights.
+                Designed KPI dashboard using SAP + POS data. Automated refresh and built advanced DAX.
             </p>
+            <div class="img-row">
+                <img src="dailysales_dashboard.png" alt="">
+                <img src="daily_sales.png" alt="">
+                <img src="FAs_reports.png" alt="">
+            </div>
         </div>
 
-        <!-- Technical Skills -->
-        <h2>Technical Skills</h2>
-        <div class="section">
-            <ul>
-                <li><strong>Data Visualization:</strong> Power BI, Tableau, Oracle BI Publisher, Report Builder 4.0</li>
-                <li><strong>Databases:</strong> Oracle SQL, PostgreSQL, MySQL, MSSQL</li>
-                <li><strong>ERP Systems:</strong> Odoo ERP, SAP, Pointsoft System</li>
-                <li><strong>ETL Tools:</strong> Kettle (Pentaho)</li>
-                <li><strong>Languages:</strong> SQL, PLSQL, PHP, HTML, JavaScript, Python</li>
-                <li><strong>Cloud & Automation:</strong> SharePoint, OneDrive, Power Automate</li>
-                <li><strong>Reports & Data Handling:</strong> Sales, Inventory, POS, Manufacturing</li>
-            </ul>
+        <!-- Project 2 -->
+        <div class="project">
+            <h3>2. PostgreSQL → Power BI Real-time Reporting</h3>
+            <p>Connected Odoo PostgreSQL database to Power BI for real-time insights.</p>
+            <div class="img-row">
+                <img src="db_restore.png" alt="">
+                <img src="postgres_ss.png" alt="">
+            </div>
         </div>
 
-        <!-- Projects -->
-        <h2>Projects</h2>
-        <div class="section">
-
-            <!-- Project 1 -->
-            <div class="project">
-                <h3>1. Retail Sales Performance Dashboard (Power BI)</h3>
-                <p>
-                    Built KPI dashboards integrating SAP sales, POS transactions, and promotions. Automated daily refresh
-                    and developed DAX measures to analyze sales trends, targets, and performance indicators.
-                </p>
-                
-                <img src="dailysales_dashboard.png" alt="Daily Sales Dashboard">
-                <img src="daily_sales.png" alt="Daily Sales by Transaction">
-                <img src="FAs_reports.png" alt="Monthly Sales">
+        <!-- Project 3 -->
+        <div class="project">
+            <h3>3. Odoo + SSMS Consolidated Reporting</h3>
+            <p>Merged historical SSMS data with Odoo ERP for unified business reporting.</p>
+            <div class="img-row">
+                <img src="monthly_sales_order.png" alt="">
+                <img src="monthly_sales.png" alt="">
+                <img src="report_builder.png" alt="">
             </div>
-
-            <!-- Project 2 -->
-            <div class="project">
-                <h3>2. PostgreSQL → Power BI Real-time Reporting</h3>
-                <p>
-                    Connected Odoo PostgreSQL database to Power BI, enabling real-time dashboards for sales, stock, and production.
-                </p>
-
-                <img src="db_restore.png" alt="PostgreSQL Restore Screenshot">
-                <img src="postgres_ss.png" alt="PostgreSQL Server Screenshot">
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project">
-                <h3>3. Consolidated Reporting (Odoo + Legacy Database)</h3>
-                <p>
-                    Combined historical retail data from SSMS with new Odoo ERP tables. Created unified reporting via SQL transformations.
-                </p>
-
-                <img src="monthly_sales_order.png" alt="Monthly Sales Order Type">
-                <img src="monthly_sales.png" alt="Region Report">
-                <img src="report_builder.png" alt="Report Builder Screenshot">
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project">
-                <h3>4. POS System Daily Monitoring Dashboard</h3>
-                <p>
-                    Developed automated monitoring dashboard to identify missing transactions, errors, and unusual sales patterns.
-                </p>
-
-                <img src="sssg_reports.png" alt="SSMS Monitor Report">
-                <img src="ssms_ss.png" alt="SSMS SQL Screenshot">
-            </div>
-
         </div>
 
-        <!-- Contact -->
-        <h2>Contact</h2>
-        <div class="section">
-            <p><strong>Email:</strong> qqhtay2028@gmail.com</p>
-            <p><strong>Phone:</strong> 09796274608</p>
-            <p><strong>Location:</strong> Yangon, Myanmar</p>
+        <!-- Project 4 -->
+        <div class="project">
+            <h3>4. POS System Daily Monitoring Dashboard</h3>
+            <p>Automated monitoring to detect missing transactions and store-level errors.</p>
+            <div class="img-row">
+                <img src="sssg_reports.png" alt="">
+                <img src="ssms_ss.png" alt="">
+            </div>
         </div>
 
     </div>
 
-    <footer>
-        © 2025 Kyu – Data Analyst Portfolio
-    </footer>
+    <!-- Contact -->
+    <h2>Contact</h2>
+    <div class="section">
+        <p><b>Email:</b> qqhtay2028@gmail.com</p>
+        <p><b>Phone:</b> 09796274608</p>
+        <p><b>Location:</b> Yangon, Myanmar</p>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Kyu – Data Analyst Portfolio
+</footer>
 
 </body>
 </html>
