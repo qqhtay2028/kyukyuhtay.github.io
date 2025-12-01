@@ -1,33 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kyu's Data Analyst Portfolio</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f5f7fa;
+            background: #f2f6fc;
             color: #333;
         }
-        header {
-            background: #1a73e8;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
+
+        /* ---------- HEADER PROFILE SECTION ---------- */
+        .top-section {
+            background: #e7f0ff;
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
         }
+
+        .top-container {
+            max-width: 1200px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .intro-text {
+            max-width: 500px;
+        }
+
+        .intro-text h1 {
+            font-size: 48px;
+            color: #1a57c8;
+            margin: 0;
+        }
+
+        .intro-text p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .circle-photo {
+            width: 320px;
+            height: 320px;
+            background: #1a57c8;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .circle-photo img {
+            width: 95%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        /* ---------- MAIN CONTENT ---------- */
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
+
         h2 {
-            border-left: 4px solid #1a73e8;
+            border-left: 4px solid #1a57c8;
             padding-left: 10px;
             margin-top: 40px;
         }
+
         .section {
             background: white;
             padding: 20px;
@@ -35,93 +84,93 @@
             border-radius: 10px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
-        ul {
-            line-height: 1.7;
-        }
-        .project {
-            margin-bottom: 40px;
-        }
+
         img {
-            width: 100%;
-            max-width: 750px;
+            width: 200px;
+            height: 200px;
             border-radius: 10px;
-            margin-top: 15px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            margin: 10px;
+            object-fit: cover;
         }
+
         footer {
             margin-top: 50px;
             text-align: center;
             padding: 20px;
-            background: #eee;
+            background: #eaeaea;
         }
     </style>
 </head>
-<body>
-    <header>
-        <h1>Kyu – Senior Data Analyst</h1>
-        <p>Specializing in Power BI • SQL • Odoo ERP • SAP Reporting • Data Integration</p>
-    </header>
 
+<body>
+
+    <!-- ================= HEADER PROFILE ================= -->
+    <section class="top-section">
+        <div class="top-container">
+
+            <!-- LEFT TEXT -->
+            <div class="intro-text">
+                <h1>Kyu</h1>
+                <h3>Senior Data Analyst</h3>
+                <p>
+                    Power BI • SQL • Odoo ERP • SAP Reporting • Data Integration<br>
+                    I analyze data, build insights, and design dashboards that help businesses make smarter decisions.
+                </p>
+            </div>
+
+            <!-- RIGHT PROFILE PHOTO -->
+            <div class="circle-photo">
+                <img src="kyu.png" alt="Profile Photo">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= MAIN CONTENT ================= -->
     <div class="container">
 
         <h2>About Me</h2>
         <div class="section">
-            <p>I am a Senior Data Analyst with 6+ years of experience in retail, banking, and ERP system analysis. I specialize in Power BI dashboards, SQL querying, Odoo ERP integration, SAP reporting, and daily business analysis solutions. I enjoy cleaning complex datasets, solving operational issues, and delivering meaningful insights that help companies make informed decisions.</p>
+            <p>I am a Senior Data Analyst with 6+ years of experience in retail, banking, and ERP system analysis. I specialize in Power BI dashboards, SQL querying, Odoo ERP integration, SAP reporting, and daily business analysis solutions. I enjoy cleaning complex datasets, solving operational issues, and delivering meaningful insights.</p>
         </div>
 
         <h2>Technical Skills</h2>
         <div class="section">
             <ul>
-                <li><strong>Data Visualization:</strong> Power BI (Advanced), Oracle BI Publisher, Report Builder 4.0, Tableau</li>
+                <li><strong>Data Visualization:</strong> Power BI, Oracle BI Publisher, Report Builder, Tableau</li>
                 <li><strong>Databases:</strong> Oracle SQL, PostgreSQL, MySQL, MSSQL</li>
-                <li><strong>ERP Systems:</strong> Pointsoft System, Odoo ERP, SAP, Oracle BI Publisher</li>
-                <li><strong>ETL Tools:</strong> Kettle (Pentaho)</li>
-                <li><strong>Languages:</strong> SQL, PLSQL, PHP, HTML, JavaScript, Python</li>
+                <li><strong>ERP:</strong> Odoo ERP, SAP, Pointsoft</li>
+                <li><strong>ETL:</strong> Pentaho</li>
+                <li><strong>Languages:</strong> SQL, PLSQL, PHP, HTML, JS, Python</li>
                 <li><strong>Cloud & Automation:</strong> SharePoint, OneDrive, Power Automate</li>
-                <li><strong>Reports & Data Handling:</strong> Sales, Inventory, POS, Manufacturing</li>
             </ul>
         </div>
 
         <h2>Projects</h2>
         <div class="section">
 
-            <!-- Project 1 -->
             <div class="project">
                 <h3>1. Retail Sales Performance Dashboard (Power BI)</h3>
-                <p>Developed a complete KPI dashboard integrating SAP sales, POS data, and promotions. Automated daily refresh and built DAX measures for sales performance analysis.</p>
-
-                <img src="dailysales_dashboard.png" alt="Daily Sales Dashboard" style="width: 200px; height: 200px;">
-                <img src="withmeasures.png" alt="Dashboard with Measures" style="width: 200px; height: 200px;">
-                <img src="FAs_reports.png" alt="Monthly Sales" style="width: 200px; height: 200px;">
+                <p>Developed KPI dashboard integrating SAP sales, POS data, and promotions.</p>
+                <img src="dailysales_dashboard.png">
+                <img src="withmeasures.png">
+                <img src="FAs_reports.png">
             </div>
 
-            <!-- Project 2 -->
             <div class="project">
                 <h3>2. PostgreSQL → Power BI Integration</h3>
-                <p>Connected Odoo PostgreSQL database to Power BI for real-time reporting on sales, inventory, and manufacturing KPIs.</p>
-
-                <img src="db_restore.png" alt="PostgreSQL Database Screenshot" style="width: 200px; height:200px;">
-                <img src="postgres_ss.png" alt="PostgreSQL Server Screenshot" style="width: 200px; height: 200px;">
-				<img src="dailys_sales.png" alt="Daily Sales By Trans" style="width: 200px; height: 200px;">
+                <p>Connected Odoo PostgreSQL database to Power BI for real-time reporting.</p>
+                <img src="db_restore.png">
+                <img src="postgres_ss.png">
+                <img src="dailys_sales.png">
             </div>
 
-            <!-- Project 3 -->
             <div class="project">
-                <h3>3. Odoo + Legacy Database Consolidated Reporting</h3>
-                <p>Merged historical retail data from old SSMS database with new Odoo data using SQL transformations, enabling centralized reporting.</p>
-
-                <img src="monthly_sales_order.png" alt="Monthly Sales Order Type" style="width: 200px; height: 200px;">
-                <img src="mpnthly_sales.png" alt="Region Report" style="width: 200px; height: 200px;">
-		<img src="report_builder.png" alt="Report Builder Screenshot" style="width: 200px; height: 200px;">
-            </div>
-
-            
-            <!-- Project 4 -->
-            <div class="project">
-                <h3>4. POS System Daily Monitoring Dashboard</h3>
-                <p>Built a monitoring dashboard to identify missing transactions, incorrect sales data, and system errors across multiple retail stores.</p>
-		<img src="sssg_reports.png" alt="SSMS Monitoring Screenshot" style="width: 200px; height: 200px;">
-                <img src="ssms_ss.png" alt="SSMS Monitoring Screenshot" style="width: 200px; height: 200px;">
+                <h3>3. Consolidated Reporting (Odoo + Legacy DB)</h3>
+                <p>Merged SSMS historical data with Odoo using SQL transformations.</p>
+                <img src="monthly_sales_order.png">
+                <img src="mpnthly_sales.png">
+                <img src="report_builder.png">
             </div>
 
         </div>
@@ -134,8 +183,7 @@
         </div>
     </div>
 
-    <footer>
-        © 2025 Kyu – Data Analyst Portfolio
-    </footer>
+    <footer>© 2025 Kyu – Data Analyst Portfolio</footer>
+
 </body>
 </html>
